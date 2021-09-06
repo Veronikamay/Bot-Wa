@@ -89,9 +89,9 @@ const tmp_hit = JSON.parse(fs.readFileSync('./src/hit.json'))
 const tmphit = JSON.parse(fs.readFileSync('./src/today.json'))
 //******************** 》Setting《 ********************\\
 menusimpel = false
-owner = "6281804680327@s.whatsapp.net"
-ownerN = "6281804680327"
-setgrup = "6281226770537-1606097314@g.us"
+owner = "6283102050562@s.whatsapp.net"
+ownerN = "6283102050562"
+setgrup = "6283102050562-1606097314@g.us"
 wa = '0@s.whatsapp.net'
 blocked = []
 public = true
@@ -153,7 +153,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + 'FN:Senku シ︎\n'
             + 'ORG:Owner Senku;\n'
-            + 'TEL;type=CELL;type=VOICE;waid=6281804680327:+62 831-1800-241\n'
+            + 'TEL;type=CELL;type=VOICE;waid=6283102050562:+62 831-02050-562\n'
             + 'END:VCARD'
             
 const sleep = async (ms) => {
@@ -2390,7 +2390,7 @@ break
 case 'covidglobal':
 if (isLimit(sender, isPremium, isOwner, limitCount, limit)) return reply(mess.limit)
 cvdg = await fetchJson(`https://jar-api.xyz/api/covidworld?apikey=${ai}`)
-coped = `❒ *「 Covid World 」* ❒ \n\n*Total Kasus :* _${cvdg.result.totalCases}_\n*Total Meninggal :* _${cvdg.result.deaths}_\n*Total Sembuh :* _${cvdg.result.recovered}_\n*Kasus Tertutup :* _${cvdg.result.closedCases}_\n*Total Dirawat :* _${cvdg.result.activeCases}_`
+coped Ed = `❒ *「 Covid World 」* ❒ \n\n*Total Kasus :* _${cvdg.result.totalCases}_\n*Total Meninggal :* _${cvdg.result.deaths}_\n*Total Sembuh :* _${cvdg.result.recovered}_\n*Kasus Tertutup :* _${cvdg.result.closedCases}_\n*Total Dirawat :* _${cvdg.result.activeCases}_`
 reply(coped)
 limitAdd(sender, limit)
 break
